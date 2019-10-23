@@ -205,7 +205,7 @@ suites:
             '*':
               - strongswan
       pillars_from_files:
-        strongswan.sls: pillar.example
+        strongswan.sls: test/salt/pillar/no_config.sls
     verifier:
       inspec_tests:
         - path: test/integration/default
