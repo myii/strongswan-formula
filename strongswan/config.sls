@@ -12,15 +12,13 @@
 {%- set connections = {} %}
 {%- set conn_default = {} %}
 
-{%- if conn %}
-  {%- for k, v in conn.items() %}
-    {%- if k == '_default' %}
-      {%- do conn_default.update(v) %}
-    {% else %}
-      {%- do connections.update({k:v}) %}
-    {%- endif %}
-  {%- endfor %}
-{%- endif %}
+{%- for k, v in conn.items() %}
+  {%- if k == '_default' %}
+    {%- do conn_default.update(v) %}
+  {% else %}
+    {%- do connections.update({k:v}) %}
+  {%- endif %}
+{%- endfor %}
 
 {% if connections %}
   {% set conn_dropin = True %}
