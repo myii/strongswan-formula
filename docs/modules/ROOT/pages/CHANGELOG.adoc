@@ -1,0 +1,131 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/strongswan-formula/compare/v0.2.3...v0.3.0++[0.3.0^] (2020-10-18)
+
+=== Continuous Integration
+
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/830ff733fb8a4e6a58a455f592a2adf9364fcf71[830ff73^])
+* *kitchen+travis:* use latest pre-salted images [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/23dc3b22c2cebbe5686fa13077fb81e2c1d3d8c6[23dc3b2^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/dcd0d214dc7e02c9a1b29a673982a57f40feb4f5[dcd0d21^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/946924592a8ebd0ff7af23bd8cc434aae088db41[9469245^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/d88d911e6a3720fb6fae3be9e6646aee68f9f1f0[d88d911^])
+
+=== Features
+
+* *freebsd:* adds freebsd support
+(https://github.com/saltstack-formulas/strongswan-formula/commit/0e3e700192171fb28e9d93f91227d16f2c0f21b6[0e3e700^])
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/ede6df4c96816d92208c5cadee586cbfafd114d5[ede6df4^])
+
+== link:++https://github.com/saltstack-formulas/strongswan-formula/compare/v0.2.2...v0.2.3++[0.2.3^] (2020-05-28)
+
+=== Bug Fixes
+
+* service name on Ubuntu 20.04
+(https://github.com/saltstack-formulas/strongswan-formula/commit/c0eb7c5b09b15fc9d75ba19d9dea1ef29a46cf1c[c0eb7c5^])
+* *libtofs:* “files_switch” mess up the variable exported by “map.jinja”
+ [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/28d80f5da9a31308aae82b22cd655c0eb157b84b[28d80f5^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/986b27e0c7133498d250133ecafbb38307a943a9[986b27e^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/9b6b829dc475549c7491f6757b64942563339895[9b6b829^])
+* *inspec:* update ubuntu 2004 service tests
+(https://github.com/saltstack-formulas/strongswan-formula/commit/01b816f54525a6635b2708fc85de4a78856ef829[01b816f^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/611d10c1cb44cf4df16f0b4e2865696d804809c8[611d10c^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/c6b97ee75a10ea84f6409b231526bc7552429e4f[c6b97ee^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/c864c316231c73f17e5a4e6b4162319adde3eda0[c864c31^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/0bf76bad8f239ade9c81cef1f32050b983af7cb9[0bf76ba^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/5bd16b40107ccb4e1f216318ca4700500a608a7e[5bd16b4^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/e5efa45082b1e36d20063cade376ea9c152d8dc8[e5efa45^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/2a1d244ca8c25720be44fa635451c43cad95b81f[2a1d244^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/271aa46ba003b8bb5b398e461e9ca270ba5f72f1[271aa46^])
+
+== link:++https://github.com/saltstack-formulas/strongswan-formula/compare/v0.2.1...v0.2.2++[0.2.2^] (2019-11-17)
+
+=== Bug Fixes
+
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/9898d899dc450381baa46929bb9745b997ecd359[9898d89^])
+
+=== Continuous Integration
+
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/1c7fa65d4a9a88544f93b97f0137a6dd67d33980[1c7fa65^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/5d5bf55d63d8a99dbe0afb7ca75ef170a39ee015[5d5bf55^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/9e45512264b779bcab1024bb4023f102538c6fd0[9e45512^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/70ec5ad20c0316988cf30493e69582c5557762be[70ec5ad^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/5eb870c3cf6503a708e3bde6dfe0ef12a18dd40a[5eb870c^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/92191b26449890c46439512101a962acca336bb0[92191b2^])
+
+=== Documentation
+
+* *readme:* minor fix (indented bullets)
+(https://github.com/saltstack-formulas/strongswan-formula/commit/ae7e9dceedd2d23523aa39ceee2ebbbf11bbc84d[ae7e9dc^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/strongswan-formula/commit/08a42af1428a2c4e4b11250b308846d5392d95b1[08a42af^])
+
+== link:++https://github.com/saltstack-formulas/strongswan-formula/compare/v0.2.0...v0.2.1++[0.2.1^] (2019-10-15)
+
+=== Code Refactoring
+
+* *tofs:* upgrade for all file.managed
+(https://github.com/saltstack-formulas/strongswan-formula/commit/522aa77[522aa77^])
+
+== link:++https://github.com/saltstack-formulas/strongswan-formula/compare/v0.1.0...v0.2.0++[0.2.0^] (2019-10-15)
+
+=== Bug Fixes
+
+* *rubocop:* add fixes using `rubocop --safe-auto-correct`
+(https://github.com/saltstack-formulas/strongswan-formula/commit/46ef5fa[46ef5fa^])
+* *rubocop:* fix remaining errors manually
+(https://github.com/saltstack-formulas/strongswan-formula/commit/84a9ff0[84a9ff0^])
+* *tojson:* use `|json` to support older minions for the time being
+(https://github.com/saltstack-formulas/strongswan-formula/commit/4bf828e[4bf828e^])
+* *yamllint:* apply rules throughout
+(https://github.com/saltstack-formulas/strongswan-formula/commit/b18c008[b18c008^])
+
+=== Documentation
+
+* *formula:* move to `docs/` directory
+(https://github.com/saltstack-formulas/strongswan-formula/commit/641d73c[641d73c^])
+* *readme:* update to standard structure
+(https://github.com/saltstack-formulas/strongswan-formula/commit/038660c[038660c^])
+
+=== Features
+
+* *install:* provide EPEL repo configuration for `Amazon Linux-2`
+(https://github.com/saltstack-formulas/strongswan-formula/commit/be7b55e[be7b55e^])
+* *semantic-release:* implement for this formula
+(https://github.com/saltstack-formulas/strongswan-formula/commit/63428a6[63428a6^])
